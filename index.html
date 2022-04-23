@@ -8,76 +8,76 @@
         <h1>Git and Github. How it work?</h1>
         <br>
         <dl>
-            <dt>clear</dt>
+            <dt><b>clear</b></dt>
             <dd>очистить консоль (powershell & git bash)</dd>
-            <dt>ls</dt>
+            <dt><b>ls</b></dt>
             <dd>показывает список папок и файлов в текущей дериктории</dd>
-            <dt>pwd</dt>
+            <dt><b>pwd</b></dt>
             <dd>показыввает наше текущее расположение</dd>
-            <dt>cd</dt>
+            <dt><b>cd</b></dt>
             <dd>открыть паку в текущей директории (перейти на 1 уровень вниз)</dd>
-            <dt>cd ..</dt>
+            <dt><b>cd ..</b></dt>
             <dd>перейти на 1 уровень вверх относительно текущей директоии</dd>
-            <dt>mkdir <em>new-folder</em></dt>
+            <dt><b>mkdir</b> <em>new-folder</em></dt>
             <dd>создать папку с именем “new-folder”</dd>
-            <dt>touch <em>index.html</em></dt>
+            <dt><b>touch</b> <em>index.html</em></dt>
             <dd>создать файл index.html</dd>
-            <dt>nano <em>index.html</em></dt>
+            <dt><b>nano</b> <em>index.html</em></dt>
             <dd>редактировать файл index.html</dd>
-            <dt>git --version</dt>
+            <dt><b>git --version</b></dt>
             <dd>проверяет установлен ли Git и его версию</dd>
         </dl>
         <dl>
-            <dt>git init</dt>
+            <dt><b>git init</b></dt>
             <dd>Инициализация нового репозитория для проекта (выполняется 1 раз для проекта, в корне поректа)</dd>
-            <dt>git status</dt>
+            <dt><b>git status</b></dt>
             <dd>Показывает текущий состояние файлов в репозитории (отслеживаемые / неотслеживаемые)</dd>
-            <dt>git add <em>index.html</em></dt>
+            <dt><b>git add</b> <em>index.html</em></dt>
             <dd>происходит отслеживание файла index.html  (его изменений) в репозитории</dd>
-            <dt>git add .</dt>
+            <dt><b>git add .</b></dt>
             <dd>происходит отслеживание всех файлов (их изменений) в репозитории</dd>
-            <dt>git rm --cached <em>info.txt</em></dt>
+            <dt><b>git rm --cached </b><em>info.txt</em></dt>
             <dd>прекратить отслеживание изменений в файле info.txt</dd>
-            <dt>git commit -m <em>“создал файл index.html”</em></dt>
+            <dt><b>git commit -m </b><em>“создал файл index.html”</em></dt>
             <dd>создает новый коммит (новую запись в истории репозитория) с именем “создал файл index.html”. Сохраняется состояние файлов репозитория на момент выполнения команды git add (git add .). Следовательно, пред выполением команды git commit -m необходимо обязательно выполнить команду git add (git add .).</dd>
-            <dt>.gitignore</dt>
+            <dt><b>.gitignore</b></dt>
             <dd>файл (создающийся в корне текущего репозитория) в котором перечисляются имена файлов и папок которые не нужно отслеживать (сохранять). Указав имя папки, все содержимое папки тоже не отслеживается.</dd>
         </dl>
         <dl>
-            <dt>git branch</dt>
+            <dt><b>git branch</b></dt>
             <dd>показывает список веток</dd>
-            <dt> git branch -M <em>main</em></dt>
+            <dt><b>git branch -M </b><em>main</em></dt>
             <dd>Переименовывает текущую ветку на имя “main”</dd>
-            <dt>git branch <em>readme</em></dt>
+            <dt><b>git branch </b><em>readme</em></dt>
             <dd>создает новую ветку с именем “readme”</dd>
-            <dt>git branch -D <em>readme</em></dt>
+            <dt><b>git branch -D </b><em>readme</em></dt>
             <dd>удаляет ветку с именем “readme”</dd>
-            <dt>git checkout <em>readme</em></dt>
+            <dt><b>git checkout </b><em>readme</em></dt>
             <dd>переключается на другую ветку с именем “readme”</dd>
-            <dt> git checkout -b <em>project2</em></dt>
+            <dt><b>git checkout -b </b><em>project2</em></dt>
             <dd>создает новую ветку “project2” и сразу переключается на нее</dd>
-            <dt>git merge <em> project2</em></dt>
+            <dt><b>git merge </b><em> project2</em></dt>
             <dd>совмещает текущую ветку с файлами ветки “project2”</dd>
             <dt></dt>
         </dl>
         <dl>
-            <dt>git config --global user.name</dt>
+            <dt><b>git config --global user.name</b></dt>
             <dd>Показывает имя пользователя</dd>
-            <dt>git config --global user.name <em>'new user'</em></dt>
+            <dt><b>git config --global user.name </b><em>'new user'</em></dt>
             <dd>Изменяет имя пользователя</dd>
-            <dt>git config --global user.email</dt>
+            <dt><b>git config --global user.email</b></dt>
             <dd>Показывает email пользователя</dd>
-            <dt>git config --global user.email <em>'test@mail.ru'</em></dt>
+            <dt><b>git config --global user.email </b><em>'test@mail.ru'</em></dt>
             <dd>Изменяет email пользователя</dd>
-            <dt>git remote add origin <em>git@github.com...</em></dt>
+            <dt><b>git remote add origin </b><em>git@github.com...</em></dt>
             <dd>(Формат авторизации – SSH) Добавляем связь между удаленным и локальным репозиторием</dd>
-            <dt>git remote remove origin</dt>
+            <dt><b>git remote remove origin</b></dt>
             <dd>Удаляем связь между удаленным и локальным репозиторием</dd>
-            <dt>git push orogin master</dt>
+            <dt><b>git push orogin master</b></dt>
             <dd>заливает текущие локальные коммиты в удаленный репозиторий</dd>
-            <dt>git clone <em>git@github.com...</em></dt>
+            <dt><b>git clone </b><em>git@github.com...</em></dt>
             <dd>клонирует проект с удаленного репозитория “git@github.com...”</dd>
-            <dt>git pull</dt>
+            <dt><b>git pull</b></dt>
             <dd>забирает изменения с удаленного репозитория в локальный</dd>
         </dl>
     </body>
