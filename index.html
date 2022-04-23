@@ -6,5 +6,79 @@
     </head>
     <body>
         <h1>Git and Github. How it work?</h1>
+        <br>
+        <dl>
+            <dt>clear</dt>
+            <dd>очистить консоль (powershell & git bash)</dd>
+            <dt>ls</dt>
+            <dd>показывает список папок и файлов в текущей дериктории</dd>
+            <dt>pwd</dt>
+            <dd>показыввает наше текущее расположение</dd>
+            <dt>cd</dt>
+            <dd>открыть паку в текущей директории (перейти на 1 уровень вниз)</dd>
+            <dt>cd ..</dt>
+            <dd>перейти на 1 уровень вверх относительно текущей директоии</dd>
+            <dt>mkdir <em>new-folder</em></dt>
+            <dd>создать папку с именем “new-folder”</dd>
+            <dt>touch <em>index.html</em></dt>
+            <dd>создать файл index.html</dd>
+            <dt>nano <em>index.html</em></dt>
+            <dd>редактировать файл index.html</dd>
+            <dt>git --version</dt>
+            <dd>проверяет установлен ли Git и его версию</dd>
+        </dl>
+        <dl>
+            <dt>git init</dt>
+            <dd>Инициализация нового репозитория для проекта (выполняется 1 раз для проекта, в корне поректа)</dd>
+            <dt>git status</dt>
+            <dd>Показывает текущий состояние файлов в репозитории (отслеживаемые / неотслеживаемые)</dd>
+            <dt>git add <em>index.html</em></dt>
+            <dd>происходит отслеживание файла index.html  (его изменений) в репозитории</dd>
+            <dt>git add .</dt>
+            <dd>происходит отслеживание всех файлов (их изменений) в репозитории</dd>
+            <dt>git rm --cached <em>info.txt</em></dt>
+            <dd>прекратить отслеживание изменений в файле info.txt</dd>
+            <dt>git commit -m <em>“создал файл index.html”</em></dt>
+            <dd>создает новый коммит (новую запись в истории репозитория) с именем “создал файл index.html”. Сохраняется состояние файлов репозитория на момент выполнения команды git add (git add .). Следовательно, пред выполением команды git commit -m необходимо обязательно выполнить команду git add (git add .).</dd>
+            <dt>.gitignore</dt>
+            <dd>файл (создающийся в корне текущего репозитория) в котором перечисляются имена файлов и папок которые не нужно отслеживать (сохранять). Указав имя папки, все содержимое папки тоже не отслеживается.</dd>
+        </dl>
+        <dl>
+            <dt>git branch</dt>
+            <dd>показывает список веток</dd>
+            <dt> git branch -M <em>main</em></dt>
+            <dd>Переименовывает текущую ветку на имя “main”</dd>
+            <dt>git branch <em>readme</em></dt>
+            <dd>создает новую ветку с именем “readme”</dd>
+            <dt>git branch -D <em>readme</em></dt>
+            <dd>удаляет ветку с именем “readme”</dd>
+            <dt>git checkout <em>readme</em></dt>
+            <dd>переключается на другую ветку с именем “readme”</dd>
+            <dt> git checkout -b <em>project2</em></dt>
+            <dd>создает новую ветку “project2” и сразу переключается на нее</dd>
+            <dt>git merge <em> project2</em></dt>
+            <dd>совмещает текущую ветку с файлами ветки “project2”</dd>
+            <dt></dt>
+        </dl>
+        <dl>
+            <dt>git config --global user.name</dt>
+            <dd>Показывает имя пользователя</dd>
+            <dt>git config --global user.name <em>'new user'</em></dt>
+            <dd>Изменяет имя пользователя</dd>
+            <dt>git config --global user.email</dt>
+            <dd>Показывает email пользователя</dd>
+            <dt>git config --global user.email <em>'test@mail.ru'</em></dt>
+            <dd>Изменяет email пользователя</dd>
+            <dt>git remote add origin <em>git@github.com...</em></dt>
+            <dd>(Формат авторизации – SSH) Добавляем связь между удаленным и локальным репозиторием</dd>
+            <dt>git remote remove origin</dt>
+            <dd>Удаляем связь между удаленным и локальным репозиторием</dd>
+            <dt>git push orogin master</dt>
+            <dd>заливает текущие локальные коммиты в удаленный репозиторий</dd>
+            <dt>git clone <em>git@github.com...</em></dt>
+            <dd>клонирует проект с удаленного репозитория “git@github.com...”</dd>
+            <dt>git pull</dt>
+            <dd>забирает изменения с удаленного репозитория в локальный</dd>
+        </dl>
     </body>
 </html>
